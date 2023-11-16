@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+    <input placeholder="Digite o nome da cidade" class="input-usuario">
+    <button onclick="cliqueNoBotao()">
+      <img class="img-busca" src="https://www.svgrepo.com/show/488200/find.svg" alt="">
+    </button>
+    <div class="infos">
+      <h2 class="cidade">Tempo em Rio de Janeiro </h2>
+      <h3 class="temp">Temperatura Atual: 28 °C</h3>
+      <div class="max-min">
+        <p class="max">Máxima: 28 °C</p>
+        <p class="min">Mínima: 28 °C</p>
+      </div>
+      <p class="sensacao">Sensação Térmica: 37°C</p>
+
+      <div class="tempo">
+        <img  class="img-previsao" src="//openweathermap.org/img/wn/04n.png" alt="">
+        <p class="texto-previsao">Nuvens Dispersas</p>      
+      </div>
+
+      <p class="umidade">Umidade: 70% </p>
+    </div>
+  </div>
+  
+</body>
+<script src="script.js"></script>
+</html>

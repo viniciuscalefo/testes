@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    }
+    h1::after {
+      content: "|";
+      margin-left: 5px;
+      opacity: 1;
+      animation: blink 0.5s infinite;
+      color: aquamarine;
+    }
+    @keyframes blink {
+      0%,
+      100% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0;
+      }
+    }
+  </style>
+  <body>
+    <h1>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+      exercitationem Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      Quis velit, aut reiciendis, minus quae deserunt perspiciatis et nihil
+      eaque ipsum ad error quas enim perferendis voluptatibus id delectus
+      asperiores ex.
+    </h1>
+  </body>
+  <script>
+    function typeWriter(elemento) {
+      const arrayTexto = elemento.innerHTML.split("");
+      elemento.innerHTML = "";
+      arrayTexto.forEach((letra, i) => {
+        setTimeout(() => (elemento.innerHTML += letra), 70 * i);
+      });
+    }
+    const frase = document.querySelector("h1");
+    typeWriter(frase);
+  </script>
+</html>

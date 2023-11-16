@@ -1,0 +1,130 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Overpass Mono', monospace;
+}
+body{
+  background-image: url("https://source.unsplash.com/1600x900/?landscape");
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container{
+  background:black;
+  opacity: 0.9;
+  border-radius: 25px;
+  padding: 20px;
+  color: white;
+  width: 95%;
+  max-width: 450px;
+}
+
+input{
+  border: none;
+  outline:none;
+  padding: 10px;
+  border-radius: 25px;
+  font-size: 22px;
+  background-color: #7c7c7c2b;
+  color: #ffff;
+  width:80%
+}
+
+button{
+  border:none;
+  outline: none;
+  padding: 10px;
+  background-color:#7c7c7ce5 ;
+  border-radius: 25px;
+  cursor: pointer;
+  float: right;
+}
+
+.img-busca{width: 15px;}
+
+
+.infos{ margin-top: 30px;}
+
+.cidade{
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.temp{
+  font-size: 20px;
+  margin-top: 17px;
+  font-weight: 600;
+}
+.max-min{
+  display: flex;
+  margin-top:15px;
+  margin-left: 15px;
+  font-size: 18px;
+  gap: 20px;
+  font-weight: 300;
+}
+.sensacao{
+  margin-top: 8px;
+  margin-left: 15px;
+  font-size: 18px;
+}
+.tempo{
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.texto-previsao{margin-left: 20px; text-transform: capitalize;}
+
+.umiade{margin-top: 20px;}
+
+@media(max-width:470px){
+  .container{
+    height: 63%;
+    opacity: 0.7;
+  }
+  input{
+    font-size: 17px;
+    width: 80%;
+  }
+  .infos{
+    margin-top: 25px;
+  }
+  .cidade{
+    font-size: 28px;
+    font-weight: 600;
+  }
+  .temp{
+    font-size: 30px;
+    margin-top: 17px;
+    font-weight: 600;
+  }
+  .max-min{
+    display: flex;
+    flex-direction: column;
+    margin-top:20px;
+    font-size: 20px;
+    gap: 10px;
+    font-weight: 300;
+  }
+  .sensacao{
+    margin-top: 20px;
+    margin-left: 15px;
+    font-size: 20px;
+  }
+  .tempo{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .texto-previsao{margin-left: 20px; text-transform: capitalize; font-size: 20px;}
+
+  .umiade{font-size: 20px;}
+  .img-previsao{
+    height:50px;
+  }
+}
